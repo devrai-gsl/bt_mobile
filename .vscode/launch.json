@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Hot reload (emulator)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}",
+      "deviceId": "emulator-5554",
+      "flutterMode": "debug",
+      "env": {
+        "ANDROID_HOME": "/home/devrai/Android/Sdk",
+        "ANDROID_SDK_ROOT": "/home/devrai/Android/Sdk"
+      },
+      "toolArgs": [
+        "--dart-define=BT_DEV_SANDBOX=true"
+      ]
+    },
+    {
+      "name": "bt_mobile (Android emulator)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}",
+      "deviceId": "emulator-5554",
+      "toolArgs": [
+        "--dart-define=BT_API_BASE_URL=http://10.0.2.2"
+      ]
+    },
+    {
+      "name": "bt_mobile (Linux desktop)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}",
+      "deviceId": "linux"
+    },
+    {
+      "name": "bt_mobile (Chrome)",
+      "type": "dart",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "cwd": "${workspaceFolder}",
+      "deviceId": "chrome"
+    }
+  ]
+}

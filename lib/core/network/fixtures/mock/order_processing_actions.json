@@ -1,0 +1,55 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "actions": {
+      "Accept Full Order": {
+        "type": "async",
+        "loader_label": "Accepting order…",
+        "loader_ms": 1800,
+        "success_message": "Order accepted successfully",
+        "updates_order": true
+      },
+      "Accept Partial Order": {
+        "type": "async",
+        "loader_label": "Accepting order…",
+        "loader_ms": 1800,
+        "success_message": "Partial acceptance saved",
+        "updates_order": true
+      },
+      "Process Order": {
+        "type": "async",
+        "loader_label": "Processing order…",
+        "loader_ms": 2000,
+        "success_message": "Order processed",
+        "updates_order": true
+      },
+      "Mark as Ready to Ship": {
+        "type": "async",
+        "loader_label": "Updating status…",
+        "loader_ms": 1200,
+        "success_message": "Marked ready to ship",
+        "updates_order": true
+      },
+      "Assign Courier": {
+        "type": "sheet",
+        "loader_label": "Assigning courier…",
+        "loader_ms": 1500,
+        "success_message": "Courier assigned",
+        "updates_order": true
+      },
+      "Print Docs": {
+        "type": "async",
+        "loader_label": "Generating documents…",
+        "loader_ms": 2200,
+        "success_message": "Documents ready to download",
+        "updates_order": false
+      }
+    },
+    "couriers": [
+      { "id": "delhivery", "name": "Delhivery" },
+      { "id": "bluedart", "name": "BlueDart" },
+      { "id": "gati", "name": "Gati Express" }
+    ]
+  }
+}

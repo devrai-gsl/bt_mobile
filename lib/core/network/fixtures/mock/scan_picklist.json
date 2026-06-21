@@ -1,0 +1,169 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "warehouse_name": "Goa Warehouse",
+    "batch_barcodes": {
+      "BATCH-101": "batch-101",
+      "BATCH-102": "batch-102"
+    },
+    "batches": [
+      {
+        "id": "batch-101",
+        "label": "Morning Picklist",
+        "order_count": 3,
+        "status": "partially_picked",
+        "status_label": "Partially Picked",
+        "created_at": "16 Jun 2026  08:30 am",
+        "locked_by": null
+      },
+      {
+        "id": "batch-102",
+        "label": "Express Picklist",
+        "order_count": 5,
+        "status": "pick_pending",
+        "status_label": "Pick Pending",
+        "created_at": "16 Jun 2026  10:15 am",
+        "locked_by": null
+      },
+      {
+        "id": "batch-099",
+        "label": "Yesterday Closeout",
+        "order_count": 18,
+        "status": "fully_picked",
+        "status_label": "Fully Picked",
+        "created_at": "15 Jun 2026  06:00 pm",
+        "locked_by": "Ravi K."
+      }
+    ],
+    "sessions": {
+      "batch-101": {
+        "id": "batch-101",
+        "label": "Morning Picklist",
+        "orders": [
+          {
+            "id": "order-rahul",
+            "customer_name": "Rahul Sharma",
+            "channel_ref": "Amazon India · 882104",
+            "status": "picking",
+            "items": [
+              {
+                "id": "rahul-item-1",
+                "sku": "SKU-8821",
+                "name": "Cotton Shirt - L",
+                "required_qty": 2,
+                "picked_qty": 0,
+                "requires_lot": false,
+                "is_kit_component": false
+              }
+            ]
+          },
+          {
+            "id": "order-priya",
+            "customer_name": "Priya Nair",
+            "channel_ref": "Myntra · 441209",
+            "status": "complete",
+            "items": [
+              {
+                "id": "priya-item-1",
+                "sku": "MYN-441",
+                "name": "Running Shoes - 9",
+                "required_qty": 1,
+                "picked_qty": 1,
+                "requires_lot": false,
+                "is_kit_component": false
+              }
+            ]
+          },
+          {
+            "id": "order-anita",
+            "customer_name": "Anita Rao",
+            "channel_ref": "Flipkart · 621301",
+            "status": "picking",
+            "items": [
+              {
+                "id": "anita-item-1",
+                "sku": "FLP-621",
+                "name": "Vitamin C Serum 30ml",
+                "required_qty": 1,
+                "picked_qty": 0,
+                "requires_lot": true,
+                "is_kit_component": false
+              }
+            ]
+          }
+        ],
+        "known_item_barcodes": {
+          "SKU-8821": "rahul-item-1",
+          "MYN-441": "priya-item-1",
+          "FLP-621": "anita-item-1",
+          "LOT-621301-A": "anita-item-1"
+        }
+      },
+      "batch-102": {
+        "id": "batch-102",
+        "label": "Express Picklist",
+        "orders": [
+          {
+            "id": "order-neha",
+            "customer_name": "Neha Kulkarni",
+            "channel_ref": "Shopify · 669986",
+            "status": "picking",
+            "items": [
+              {
+                "id": "neha-item-1",
+                "sku": "5KU-NUMB3R",
+                "name": "Noya Lifestyle Light Shirt - M",
+                "required_qty": 2,
+                "picked_qty": 0,
+                "requires_lot": false,
+                "is_kit_component": false
+              }
+            ]
+          }
+        ],
+        "known_item_barcodes": {
+          "5KU-NUMB3R": "neha-item-1"
+        }
+      }
+    },
+    "rejection_reasons": [
+      "Damaged item",
+      "Out of stock",
+      "Wrong product on shelf",
+      "Customer cancelled"
+    ],
+    "active_batch": {
+      "id": "batch-101",
+      "label": "Morning Picklist",
+      "orders": [
+        {
+          "id": "order-rahul",
+          "customer_name": "Rahul Sharma",
+          "channel_ref": "Amazon India · 882104",
+          "item_count": 2,
+          "status": "pending_scan"
+        },
+        {
+          "id": "order-priya",
+          "customer_name": "Priya Nair",
+          "channel_ref": "Myntra · 441209",
+          "item_count": 1,
+          "status": "scanned"
+        },
+        {
+          "id": "order-anita",
+          "customer_name": "Anita Rao",
+          "channel_ref": "Flipkart · 621301",
+          "item_count": 1,
+          "status": "pending_scan"
+        }
+      ],
+      "known_barcodes": {
+        "882104-AZ": "order-rahul",
+        "441209-MY": "order-priya",
+        "621301-FK": "order-anita"
+      }
+    }
+  }
+}

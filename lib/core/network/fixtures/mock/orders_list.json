@@ -1,0 +1,141 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "tabs": ["To Fix", "New", "Packing", "Ready to Ship", "Shipped"],
+    "orders": [
+      {
+        "id": "order-fix-1",
+        "customer_name": "Amit Desai",
+        "status_label": "Unmapped SKU",
+        "badges": ["COD", "To Fix"],
+        "channel_ref": "Shopify · Ref 991201",
+        "location": "Pune, MH",
+        "date": "26 Aug 2026  10:15:00 am",
+        "items": [
+          {
+            "sku": "UNMAPPED",
+            "name": "Unknown product listing",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹899.00",
+        "shipping": null,
+        "sla_breached": false,
+        "more_items": null,
+        "action_label": null,
+        "tab": "To Fix"
+      },
+      {
+        "id": "order-neha",
+        "customer_name": "Neha Kulkarni",
+        "status_label": "Seller shipped",
+        "badges": ["COD", "Pending Acceptance"],
+        "channel_ref": "Flipkart India · Ref 621290",
+        "location": "Hyderabad, TG",
+        "date": "25 Aug 2026  00:00:00 pm",
+        "items": [
+          {
+            "sku": "5KU-NUMB3R",
+            "name": "Noya Lifestyle Black Kurta - M",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹2,100.00",
+        "shipping": "+ ₹50.00 shipping",
+        "sla_breached": true,
+        "more_items": null,
+        "action_label": "Accept Order",
+        "tab": "New"
+      },
+      {
+        "id": "order-anita",
+        "customer_name": "Anita Rao",
+        "status_label": "Seller shipped",
+        "badges": ["Prepaid", "Pending Acceptance"],
+        "channel_ref": "Flipkart India · Ref 621301",
+        "location": "Bengaluru, KA",
+        "date": "25 Aug 2026  11:20:00 am",
+        "items": [
+          {
+            "sku": "SKU-4410",
+            "name": "Linen Trousers - 32",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹1,890.00",
+        "shipping": "+ ₹40.00 shipping",
+        "sla_breached": false,
+        "more_items": null,
+        "action_label": "Accept Order",
+        "tab": "New"
+      },
+      {
+        "id": "order-rahul",
+        "customer_name": "Rahul Sharma",
+        "status_label": "Seller shipped",
+        "badges": ["Prepaid", "Packing"],
+        "channel_ref": "Amazon India · Ref 882104",
+        "location": "Mumbai, MH",
+        "date": "24 Aug 2026  14:30:00 pm",
+        "items": [
+          {
+            "sku": "SKU-8821",
+            "name": "Cotton Shirt - L",
+            "qty": "2 Qty"
+          }
+        ],
+        "total": "₹1,450.00",
+        "shipping": null,
+        "sla_breached": false,
+        "more_items": null,
+        "action_label": "Process Order",
+        "tab": "Packing"
+      },
+      {
+        "id": "order-priya",
+        "customer_name": "Priya Nair",
+        "status_label": "Ready for pickup",
+        "badges": ["COD"],
+        "channel_ref": "Myntra · Ref 441209",
+        "location": "Goa",
+        "date": "23 Aug 2026  09:15:00 am",
+        "items": [
+          {
+            "sku": "MYN-441",
+            "name": "Running Shoes - 9",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹3,299.00",
+        "shipping": "+ ₹0.00 shipping",
+        "sla_breached": false,
+        "more_items": null,
+        "action_label": "Print Docs",
+        "tab": "Ready to Ship"
+      },
+      {
+        "id": "order-vikram",
+        "customer_name": "Vikram Singh",
+        "status_label": "Delivered",
+        "badges": ["Prepaid", "Shipped"],
+        "channel_ref": "Amazon India · Ref 771902",
+        "location": "Delhi, DL",
+        "date": "20 Aug 2026  16:45:00 pm",
+        "items": [
+          {
+            "sku": "SKU-7719",
+            "name": "Wireless Earbuds",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹2,499.00",
+        "shipping": null,
+        "sla_breached": false,
+        "more_items": null,
+        "action_label": null,
+        "tab": "Shipped"
+      }
+    ]
+  }
+}

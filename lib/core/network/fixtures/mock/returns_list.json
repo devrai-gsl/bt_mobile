@@ -1,0 +1,75 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "tabs": ["All Returns", "Return QC Pending"],
+    "returns": [
+      {
+        "id": "ret-neha-1",
+        "customer_name": "Neha Kulkarni",
+        "status_label": "Courier Return",
+        "badges": ["Return Initiated"],
+        "channel_ref": "Shopify · Order Ref: 621290",
+        "return_ref": "Return Ref: RET15449849",
+        "date": "25 Aug 2026  00:00:00 pm",
+        "items": [
+          {
+            "sku": "5KU-NUMB3R",
+            "name": "Noya Lifestyle Black Kurta - M",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹2,100.00",
+        "action_label": "Acknowledge",
+        "tab": "All Returns",
+        "transit_status": "In Transit",
+        "courier": "Delhivery",
+        "awb": "DL15449849"
+      },
+      {
+        "id": "ret-amit-1",
+        "customer_name": "Amit Patel",
+        "status_label": "QC Pending",
+        "badges": ["Return QC Pending"],
+        "channel_ref": "Flipkart India · Ref 771204",
+        "return_ref": "Return Ref: RET882104",
+        "date": "24 Aug 2026  11:00:00 am",
+        "items": [
+          {
+            "sku": "FLP-771",
+            "name": "Wireless Earbuds",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹1,999.00",
+        "action_label": "Perform QC",
+        "tab": "Return QC Pending",
+        "transit_status": "Received",
+        "courier": "BlueDart",
+        "awb": "BD882104"
+      },
+      {
+        "id": "ret-priya-1",
+        "customer_name": "Priya Nair",
+        "status_label": "QC Pending",
+        "badges": ["Return QC Pending"],
+        "channel_ref": "Myntra · Ref 441209",
+        "return_ref": "Return Ref: RET441209",
+        "date": "23 Aug 2026  03:30:00 pm",
+        "items": [
+          {
+            "sku": "MYN-441",
+            "name": "Running Shoes - 9",
+            "qty": "1 Qty"
+          }
+        ],
+        "total": "₹3,299.00",
+        "action_label": "Perform QC",
+        "tab": "Return QC Pending",
+        "transit_status": "Received",
+        "courier": "Delhivery",
+        "awb": "DL441209"
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "demo_triggers": {
+      "locked_email": "locked@bt.com",
+      "permanent_locked_email": "permanent-locked@bt.com",
+      "concurrent_email": "concurrent@bt.com"
+    },
+    "forgot_password": {
+      "known_emails": ["devrai@browntape.com", "user@browntape.com"],
+      "steps": {
+        "email": {
+          "title": "Forgot Password",
+          "subtitle": "Enter the email associated with your Browntape account. We'll send you a reset link.",
+          "field_label": "Email",
+          "field_hint": "Enter your email",
+          "primary_button": "Send Reset Link",
+          "secondary_button": "Back to Login"
+        },
+        "email_sent": {
+          "title": "Check your email",
+          "subtitle": "We sent a password reset link to {email}. Open the link to create a new password.",
+          "primary_button": "Open Email App",
+          "secondary_button": "Back to Login"
+        },
+        "new_password": {
+          "title": "Create new password",
+          "subtitle": "Your new password must be at least 8 characters.",
+          "password_label": "New Password",
+          "confirm_label": "Confirm Password",
+          "primary_button": "Reset Password"
+        },
+        "success": {
+          "title": "Password updated",
+          "subtitle": "Your password has been reset. You can now sign in with your new password.",
+          "primary_button": "Back to Login"
+        },
+        "invalid_email": {
+          "title": "Forgot Password",
+          "subtitle": "Enter the email associated with your Browntape account. We'll send you a reset link.",
+          "error_message": "No account found for this email address."
+        },
+        "weak_password": {
+          "error_message": "Password must be at least 8 characters and match confirmation."
+        }
+      }
+    },
+    "otp_login": {
+      "masked_phone": "•••0897",
+      "demo_otp": "123456",
+      "resend_seconds": 30,
+      "request": {
+        "title": "Login using OTP",
+        "subtitle": "Enter your registered mobile number. We'll send a one-time password.",
+        "field_label": "Mobile Number",
+        "field_hint": "Enter mobile number",
+        "primary_button": "Send OTP",
+        "secondary_button": "Back to Login",
+        "link_label": "Send OTP to Email instead"
+      },
+      "verify_empty": {
+        "title": "Verify it's you",
+        "subtitle": "We sent a one-time password to {masked_phone}. Please enter the code below.",
+        "primary_button": "Verify",
+        "secondary_button": "Back to Login"
+      },
+      "verify_error": {
+        "error_message": "Invalid OTP. Please try again."
+      },
+      "verify_resend": {
+        "resend_label": "Resend OTP",
+        "resend_timer_label": "Resend OTP in {seconds}s"
+      }
+    },
+    "login_locked": {
+      "temporary": {
+        "title": "Account temporarily locked",
+        "message": "Too many failed login attempts. Try again in {minutes} minutes or reset your password.",
+        "primary_button": "Reset Password",
+        "secondary_button": "Back to Login",
+        "unlock_minutes": 15
+      },
+      "permanent": {
+        "title": "Account locked",
+        "message": "Your account has been locked. Contact your administrator or visit the SSO Portal for help.",
+        "primary_button": "SSO Portal",
+        "secondary_button": "Back to Login"
+      }
+    },
+    "concurrent_login": {
+      "title": "Welcome back",
+      "profile": {
+        "full_name": "Sandeep Verma",
+        "initials": "SV",
+        "role_line": "Fulfillment · Esther Retail Pvt. Ltd"
+      },
+      "primary_button": "Continue",
+      "secondary_button": "Log in with a different account"
+    }
+  }
+}

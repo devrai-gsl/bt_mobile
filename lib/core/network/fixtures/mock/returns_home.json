@@ -1,0 +1,54 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "title": "Returns Dashboard",
+    "warehouse_name": "Goa Warehouse",
+    "sections": [
+      {
+        "id": "todo",
+        "title": "To Do",
+        "tiles": [
+          {
+            "id": "acknowledge",
+            "title": "Acknowledge Returns",
+            "subtitle": "Confirm order receipt from courier",
+            "icon": "ack",
+            "badge_count": 4,
+            "badge_color": "muted"
+          },
+          {
+            "id": "perform_qc",
+            "title": "Perform QC",
+            "subtitle": "Inspect items, mark good or bad",
+            "icon": "qc",
+            "badge_count": 3,
+            "badge_color": "muted"
+          }
+        ]
+      },
+      {
+        "id": "more",
+        "title": "More",
+        "tiles": [
+          {
+            "id": "create_return",
+            "title": "Create Return",
+            "subtitle": null,
+            "icon": "add",
+            "badge_count": null,
+            "badge_color": null
+          },
+          {
+            "id": "view_all",
+            "title": "View All Returns",
+            "subtitle": null,
+            "icon": "list",
+            "badge_count": null,
+            "badge_color": null
+          }
+        ]
+      }
+    ]
+  }
+}

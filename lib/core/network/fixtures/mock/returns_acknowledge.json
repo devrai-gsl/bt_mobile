@@ -1,0 +1,76 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "require_otp_on_ack": true,
+    "no_otp_channel_ids": ["amazon"],
+    "channels": [
+      { "id": "shopify", "name": "Shopify Omni" },
+      { "id": "flipkart", "name": "Flipkart India" },
+      { "id": "amazon", "name": "Amazon India" },
+      { "id": "myntra", "name": "Myntra" }
+    ],
+    "warehouses": [
+      { "id": 1, "name": "Goa Warehouse", "is_default": true },
+      { "id": 2, "name": "Bengaluru HSR Layout", "is_default": false },
+      { "id": 3, "name": "Bhiwandi DC", "is_default": false }
+    ],
+    "known_barcodes": {
+      "DL15449849": {
+        "id": "ret-neha-1",
+        "channel_return_ref": "RET15449849",
+        "channel": "Shopify Omni",
+        "return_type": "Courier Return",
+        "awb": "DL15449849",
+        "order_ref": "621290"
+      },
+      "BD882104": {
+        "id": "ret-amit-1",
+        "channel_return_ref": "RET882104",
+        "channel": "Flipkart India",
+        "return_type": "Customer Return",
+        "awb": "BD882104",
+        "order_ref": "771204"
+      },
+      "RET441209": {
+        "id": "ret-priya-1",
+        "channel_return_ref": "RET441209",
+        "channel": "Myntra",
+        "return_type": "Courier Return",
+        "awb": "DL441209",
+        "order_ref": "441209"
+      }
+    },
+    "multi_return_groups": {
+      "MULTI001": [
+        {
+          "id": "ret-multi-1",
+          "channel": "Flipkart India",
+          "channel_return_ref": "RET900001A",
+          "return_type": "Courier Return",
+          "awb": "FL900001A",
+          "order_ref": "900001"
+        },
+        {
+          "id": "ret-multi-2",
+          "channel": "Flipkart India",
+          "channel_return_ref": "RET900001B",
+          "return_type": "Customer Return",
+          "awb": "FL900001B",
+          "order_ref": "900001"
+        }
+      ]
+    },
+    "otp_preview": {
+      "channel_name": "Shopify Omni",
+      "courier_name": "Delhivery",
+      "returns_count": 2,
+      "otp": "482910"
+    },
+    "success": {
+      "title": "Returns Acknowledged",
+      "message": "All scanned returns have been acknowledged successfully.",
+      "reference": "ACK-20260616-0042"
+    }
+  }
+}

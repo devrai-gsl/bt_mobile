@@ -1,0 +1,11 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "min_images": 1,
+    "max_images": 5,
+    "image_tags": ["Front", "Back", "Damage", "Label", "Other"],
+    "viewfinder_hint": "Align product within the frame",
+    "preview_title": "Image Preview"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "warehouse_name": "Goa Warehouse",
+    "channels": [
+      { "id": "all", "name": "All Channels" },
+      { "id": "flipkart", "name": "Flipkart India" },
+      { "id": "myntra", "name": "Myntra" }
+    ],
+    "media_mode": "video_auto_on",
+    "recording": {
+      "countdown_seconds": 3,
+      "max_duration_base_seconds": 90,
+      "extra_seconds_per_item": 45,
+      "warning_before_end_seconds": 5
+    },
+    "known_barcodes": {
+      "BD882104": "ret-amit-1",
+      "DL441209": "ret-priya-1",
+      "RET882104": "ret-amit-1"
+    },
+    "returns": {
+      "ret-amit-1": {
+        "id": "ret-amit-1",
+        "channel_return_ref": "RET882104",
+        "order_ref": "771204",
+        "awb": "BD882104",
+        "channel": "Flipkart India",
+        "return_date": "24 Aug 2026",
+        "customer_name": "Amit Patel",
+        "return_reason": "Item is broken/damaged",
+        "items": [
+          {
+            "id": "item-1",
+            "sku": "FLP-771",
+            "name": "Wireless Earbuds",
+            "colour": "Black",
+            "size": "One Size",
+            "qty": 1,
+            "qc_status": "pending",
+            "serial_number": null,
+            "bad_condition_reason": null
+          }
+        ]
+      },
+      "ret-priya-1": {
+        "id": "ret-priya-1",
+        "channel_return_ref": "RET441209",
+        "order_ref": "441209",
+        "awb": "DL441209",
+        "channel": "Myntra",
+        "return_date": "23 Aug 2026",
+        "customer_name": "Priya Nair",
+        "items": [
+          {
+            "id": "item-1",
+            "sku": "MYN-441",
+            "name": "Running Shoes - 9",
+            "colour": "Blue",
+            "size": "9",
+            "qty": 1,
+            "qc_status": "pending",
+            "serial_number": null,
+            "bad_condition_reason": null
+          },
+          {
+            "id": "item-2",
+            "sku": "MYN-SOCK",
+            "name": "Sports Socks - Freebie",
+            "colour": "White",
+            "size": "Free",
+            "qty": 1,
+            "qc_status": "pending",
+            "serial_number": null,
+            "bad_condition_reason": null
+          }
+        ]
+      }
+    },
+    "bad_condition_reasons": [
+      "Damaged in transit",
+      "Wrong item received",
+      "Item used / worn",
+      "Missing accessories",
+      "Packaging damaged"
+    ],
+    "image_tags": ["Front", "Back", "Damage", "Label", "Other"]
+  }
+}

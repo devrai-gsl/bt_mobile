@@ -1,0 +1,23 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "dart.flutterHotReloadOnSave": "all",
+  "dart.previewHotReloadOnSaveWatcher": false,
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.flutterSdkPath": "/home/devrai/snap/flutter/common/flutter",
+  "dart.flutterShowEmulators": "always",
+  "dart.env": {
+    "ANDROID_HOME": "/home/devrai/Android/Sdk",
+    "ANDROID_SDK_ROOT": "/home/devrai/Android/Sdk",
+    "PATH": "/home/devrai/Android/Sdk/emulator:/home/devrai/Android/Sdk/platform-tools:${env:PATH}"
+  },
+  "dart.flutterCustomEmulators": [
+    {
+      "id": "Flutter_Lite",
+      "name": "Flutter Lite",
+      "executable": "/home/devrai/Android/Sdk/emulator/emulator",
+      "args": ["-avd", "Flutter_Lite"]
+    }
+  ]
+}

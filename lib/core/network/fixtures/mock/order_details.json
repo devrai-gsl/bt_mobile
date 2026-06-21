@@ -1,0 +1,306 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "rejection_reasons": [
+      "Out of stock",
+      "Customer requested cancellation",
+      "Unable to service pincode",
+      "Duplicate order",
+      "Pricing mismatch"
+    ],
+    "orders": {
+      "order-neha": {
+        "id": "order-neha",
+        "customer_name": "Neha Kulkarni",
+        "created_at": "25 Jan 2026 00:00 am",
+        "badges": ["COD", "Pending Acceptance"],
+        "channel_name": "Shopify Omni",
+        "order_type": "Seller shipped",
+        "channel_order_ref": "6699868750060::ship#8d4365be7e",
+        "sub_order_id": "14624",
+        "items": [
+          {
+            "sku": "5KU-NUMB3R",
+            "name": "Noya Lifestyle Light Shirt - M",
+            "qty": 2,
+            "price": "₹100.00",
+            "item_ref": "15772468183276",
+            "channel_sku": "5KU-NUMB3R",
+            "channel_product_id": "15772468183276",
+            "ito_id": "1657334882421",
+            "accept_qty": 2
+          },
+          {
+            "sku": "5KU-NUMB3R",
+            "name": "Noya Lifestyle Light Shirt - M",
+            "qty": 1,
+            "price": "₹100.00",
+            "item_ref": "15772468183276",
+            "channel_sku": "5KU-NUMB3R",
+            "channel_product_id": "15772468183276",
+            "ito_id": "1657334882421",
+            "accept_qty": 1
+          }
+        ],
+        "shipping_fee": "₹50.00",
+        "cod_fee": "₹0.00",
+        "discount": "- ₹0.00",
+        "order_total": "₹2,050.00",
+        "pending_acceptance": true,
+        "is_shipped": false,
+        "show_partial_accept": true,
+        "transaction_count": 3,
+        "primary_action": "Accept Full Order",
+        "secondary_action": "Reject Order",
+        "show_scan_bar": true,
+        "shipping": null,
+        "transactions": [
+          {
+            "received_at": "25 Jan 2026",
+            "source": "Channel",
+            "source_reference": "6699868750060",
+            "gross_value": "₹2,050.00",
+            "is_system": true
+          },
+          {
+            "received_at": "25 Jan 2026",
+            "source": "Manual",
+            "source_reference": "ADJ-001",
+            "gross_value": "₹50.00",
+            "is_system": false
+          },
+          {
+            "received_at": "24 Jan 2026",
+            "source": "Channel",
+            "source_reference": "6699868750060",
+            "gross_value": "₹2,000.00",
+            "is_system": false
+          }
+        ],
+        "linked_returns": []
+      },
+      "order-rahul": {
+        "id": "order-rahul",
+        "customer_name": "Rahul Sharma",
+        "created_at": "24 Aug 2026 02:30 pm",
+        "badges": ["Prepaid", "Processing"],
+        "channel_name": "Amazon India",
+        "order_type": "Seller shipped",
+        "channel_order_ref": "882104-AZ",
+        "sub_order_id": "88214",
+        "items": [
+          {
+            "sku": "SKU-8821",
+            "name": "Cotton Shirt - L",
+            "qty": 2,
+            "price": "₹725.00",
+            "item_ref": "882104001",
+            "channel_sku": "SKU-8821",
+            "channel_product_id": "882104001",
+            "ito_id": "1657000123",
+            "accept_qty": null
+          }
+        ],
+        "shipping_fee": "₹0.00",
+        "cod_fee": "₹0.00",
+        "discount": "- ₹0.00",
+        "order_total": "₹1,450.00",
+        "pending_acceptance": false,
+        "is_shipped": false,
+        "show_partial_accept": false,
+        "transaction_count": 1,
+        "primary_action": "Process Order",
+        "secondary_action": "More Actions",
+        "show_scan_bar": false,
+        "shipping": {
+          "courier_name": "Gati Express",
+          "tracking_number": "6699868750060::ship#8d4365be7e",
+          "dimensions": "30 × 20 × 10 cm",
+          "weight": "0.85 kg",
+          "packaging_opted": true,
+          "packaging_options": [
+            { "id": "pkg-small", "label": "Small Box (S)", "short_code": "S" },
+            { "id": "pkg-medium", "label": "Medium Box (M)", "short_code": "M" },
+            { "id": "pkg-large", "label": "Large Box (L)", "short_code": "L" }
+          ],
+          "selected_packaging_id": null,
+          "delivery_address": {
+            "name": "Rahul Sharma",
+            "line1": "Flat 402, Sunrise Apartments",
+            "line2": "Andheri West",
+            "city": "Mumbai",
+            "state": "MH",
+            "pincode": "400053",
+            "phone": "+91 98765 43210"
+          },
+          "billing_address": null
+        },
+        "transactions": [
+          {
+            "received_at": "24 Aug 2026",
+            "source": "Channel",
+            "source_reference": "882104-AZ",
+            "gross_value": "₹1,450.00",
+            "is_system": true
+          }
+        ],
+        "linked_returns": []
+      },
+      "order-priya": {
+        "id": "order-priya",
+        "customer_name": "Priya Nair",
+        "created_at": "23 Aug 2026 09:15 am",
+        "badges": ["COD", "Ready to Ship"],
+        "channel_name": "Myntra",
+        "order_type": "Ready for pickup",
+        "channel_order_ref": "441209-MY",
+        "sub_order_id": "44120",
+        "items": [
+          {
+            "sku": "MYN-441",
+            "name": "Running Shoes - 9",
+            "qty": 1,
+            "price": "₹3,299.00",
+            "item_ref": "441209001",
+            "channel_sku": "MYN-441",
+            "channel_product_id": "441209001",
+            "ito_id": "1657111456",
+            "accept_qty": null
+          }
+        ],
+        "shipping_fee": "₹0.00",
+        "cod_fee": "₹0.00",
+        "discount": "- ₹0.00",
+        "order_total": "₹3,299.00",
+        "pending_acceptance": false,
+        "is_shipped": false,
+        "show_partial_accept": false,
+        "transaction_count": 2,
+        "primary_action": "Print Docs",
+        "secondary_action": "More Actions",
+        "show_scan_bar": false,
+        "shipping": {
+          "courier_name": "Delhivery",
+          "tracking_number": "DL441209MY",
+          "dimensions": "35 × 25 × 12 cm",
+          "weight": "1.20 kg",
+          "packaging_opted": true,
+          "packaging_options": [
+            { "id": "pkg-shoe", "label": "Shoe Box (SH)", "short_code": "SH" }
+          ],
+          "selected_packaging_id": "pkg-shoe",
+          "selected_packaging_title": "Shoe Box (SH)",
+          "selected_dimensions": "35 × 25 × 12 cm",
+          "selected_weight": "1.35 kg",
+          "delivery_address": {
+            "name": "Priya Nair",
+            "line1": "12 Beach Road",
+            "line2": "Panaji",
+            "city": "Goa",
+            "state": "GA",
+            "pincode": "403001",
+            "phone": "+91 98221 11009"
+          },
+          "billing_address": null
+        },
+        "transactions": [
+          {
+            "received_at": "23 Aug 2026",
+            "source": "Channel",
+            "source_reference": "441209-MY",
+            "gross_value": "₹3,299.00",
+            "is_system": true
+          },
+          {
+            "received_at": "23 Aug 2026",
+            "source": "COD",
+            "source_reference": "COD-441209",
+            "gross_value": "₹3,299.00",
+            "is_system": false
+          }
+        ],
+        "linked_returns": []
+      },
+      "order-vikram": {
+        "id": "order-vikram",
+        "customer_name": "Vikram Singh",
+        "created_at": "20 Aug 2026 04:45 pm",
+        "badges": ["Prepaid", "Shipped"],
+        "channel_name": "Amazon India",
+        "order_type": "Seller shipped",
+        "channel_order_ref": "771902-AZ",
+        "sub_order_id": "77190",
+        "items": [
+          {
+            "sku": "SKU-7719",
+            "name": "Wireless Earbuds",
+            "qty": 1,
+            "price": "₹2,499.00",
+            "item_ref": "771902001",
+            "channel_sku": "SKU-7719",
+            "channel_product_id": "771902001",
+            "ito_id": "1657223344",
+            "accept_qty": null
+          }
+        ],
+        "shipping_fee": "₹0.00",
+        "cod_fee": "₹0.00",
+        "discount": "- ₹0.00",
+        "order_total": "₹2,499.00",
+        "pending_acceptance": false,
+        "is_shipped": true,
+        "show_partial_accept": false,
+        "transaction_count": 1,
+        "primary_action": null,
+        "secondary_action": "More Actions",
+        "show_scan_bar": false,
+        "shipping": {
+          "courier_name": "BlueDart",
+          "tracking_number": "BD771902001",
+          "dimensions": "15 × 10 × 5 cm",
+          "weight": "0.25 kg",
+          "packaging_opted": false,
+          "packaging_options": [],
+          "selected_packaging_id": null,
+          "delivery_address": {
+            "name": "Vikram Singh",
+            "line1": "221 Connaught Place",
+            "line2": "Central Delhi",
+            "city": "Delhi",
+            "state": "DL",
+            "pincode": "110001",
+            "phone": "+91 98100 22110"
+          },
+          "billing_address": {
+            "name": "Vikram Singh",
+            "line1": "221 Connaught Place",
+            "line2": "Central Delhi",
+            "city": "Delhi",
+            "state": "DL",
+            "pincode": "110001",
+            "phone": "+91 98100 22110"
+          }
+        },
+        "transactions": [
+          {
+            "received_at": "20 Aug 2026",
+            "source": "Channel",
+            "source_reference": "771902-AZ",
+            "gross_value": "₹2,499.00",
+            "is_system": true
+          }
+        ],
+        "linked_returns": [
+          {
+            "id": "ret-vikram-1",
+            "channel_return_ref": "RET77190201",
+            "return_type": "Courier Return",
+            "status": "Return Initiated",
+            "awb": "BD771902001-R1"
+          }
+        ]
+      }
+    }
+  }
+}

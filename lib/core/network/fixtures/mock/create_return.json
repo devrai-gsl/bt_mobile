@@ -1,0 +1,187 @@
+{
+  "status": 200,
+  "message": "OK",
+  "data": {
+    "search_types": [
+      { "id": "bt_order_id", "label": "BT Order ID", "placeholder": "Enter BT order ID" },
+      { "id": "channel_order_id", "label": "Channel Order ID", "placeholder": "Enter channel order ID" },
+      { "id": "awb", "label": "AWB Number", "placeholder": "Enter AWB number" }
+    ],
+    "search_loader_ms": 1200,
+    "empty_search_message": "Please enter an order ID",
+    "return_types": [
+      "Courier Return",
+      "Customer Return",
+      "RTO",
+      "Manual Return"
+    ],
+    "return_reasons": {
+      "default": [
+        "Size issue",
+        "Quality issue",
+        "Wrong product",
+        "Customer changed mind",
+        "Damaged in transit"
+      ],
+      "Courier Return": [
+        "RTO - Customer refused",
+        "RTO - Address issue",
+        "Damaged in transit",
+        "Courier return"
+      ]
+    },
+    "couriers": [
+      { "id": "delhivery", "name": "Delhivery" },
+      { "id": "bluedart", "name": "BlueDart" },
+      { "id": "gati", "name": "Gati Express" }
+    ],
+    "known_orders": {
+      "789456465": {
+        "order_id": "789456465",
+        "channel_order_ref": "6527819251948",
+        "channel": "Shopify",
+        "customer_name": "Neha Kapoor",
+        "order_status": "Packing",
+        "allow_return": false,
+        "items": []
+      },
+      "789456466": {
+        "order_id": "789456466",
+        "channel_order_ref": "6527819251948",
+        "channel": "Shopify",
+        "customer_name": "Neha Kapoor",
+        "order_status": "Pending Acceptance",
+        "allow_return": false,
+        "items": []
+      },
+      "789456467": {
+        "order_id": "789456467",
+        "channel_order_ref": "6527819251948",
+        "channel": "Shopify",
+        "customer_name": "Neha Kapoor",
+        "order_status": "Processing",
+        "allow_return": false,
+        "items": []
+      },
+      "882104": {
+        "order_id": "882104",
+        "channel_order_ref": "6527819251948",
+        "channel": "Shopify",
+        "customer_name": "Rahul Sharma",
+        "order_status": "Shipped",
+        "allow_return": true,
+        "return_courier": "Delhivery",
+        "return_awb": "DL882104",
+        "items": [
+          {
+            "id": "line-1",
+            "sku": "51409",
+            "name": "Black earphones",
+            "channel_item_id": "1546919234521",
+            "rev_set": "-",
+            "qty_ordered": 1,
+            "qty_returnable": 1,
+            "qty_previously_returned": 0,
+            "price": "₹100.00",
+            "default_selected": true,
+            "default_return_qty": 1
+          },
+          {
+            "id": "line-2",
+            "sku": "51481",
+            "name": "Wireless mouse",
+            "channel_item_id": "1546919234890",
+            "rev_set": "Rev A",
+            "qty_ordered": 1,
+            "qty_returnable": 1,
+            "qty_previously_returned": 0,
+            "price": "₹450.00"
+          },
+          {
+            "id": "line-3",
+            "sku": "51502",
+            "name": "USB-C cable 1m",
+            "channel_item_id": "1546919235012",
+            "rev_set": "-",
+            "qty_ordered": 2,
+            "qty_returnable": 2,
+            "qty_previously_returned": 0,
+            "price": "₹199.00"
+          }
+        ]
+      },
+      "6527819251948": {
+        "order_id": "882104",
+        "channel_order_ref": "6527819251948",
+        "channel": "Shopify",
+        "customer_name": "Rahul Sharma",
+        "order_status": "Shipped",
+        "allow_return": true,
+        "return_courier": "Delhivery",
+        "return_awb": "DL882104",
+        "items": [
+          {
+            "id": "line-1",
+            "sku": "51409",
+            "name": "Black earphones",
+            "channel_item_id": "1546919234521",
+            "rev_set": "-",
+            "qty_ordered": 1,
+            "qty_returnable": 1,
+            "qty_previously_returned": 0,
+            "price": "₹100.00",
+            "default_selected": true,
+            "default_return_qty": 1
+          },
+          {
+            "id": "line-2",
+            "sku": "51481",
+            "name": "Wireless mouse",
+            "channel_item_id": "1546919234890",
+            "rev_set": "Rev A",
+            "qty_ordered": 1,
+            "qty_returnable": 1,
+            "qty_previously_returned": 0,
+            "price": "₹450.00"
+          },
+          {
+            "id": "line-3",
+            "sku": "51502",
+            "name": "USB-C cable 1m",
+            "channel_item_id": "1546919235012",
+            "rev_set": "-",
+            "qty_ordered": 2,
+            "qty_returnable": 2,
+            "qty_previously_returned": 0,
+            "price": "₹199.00"
+          }
+        ]
+      },
+      "441209": {
+        "order_id": "441209",
+        "channel_order_ref": "441209-MY",
+        "channel": "Myntra",
+        "customer_name": "Priya Nair",
+        "order_status": "Shipped",
+        "allow_return": true,
+        "items": [
+          {
+            "id": "line-1",
+            "sku": "MYN-441",
+            "name": "Running Shoes - 9",
+            "channel_item_id": "MYN-441-X",
+            "qty_ordered": 1,
+            "qty_returnable": 1,
+            "qty_previously_returned": 0,
+            "price": "₹3,299.00"
+          }
+        ]
+      }
+    },
+    "warehouses": [
+      { "id": 1, "name": "Goa Warehouse", "is_default": true },
+      { "id": 2, "name": "Bengaluru HSR Layout", "is_default": false }
+    ],
+    "success_redirect_ms": 1200
+  }
+}
