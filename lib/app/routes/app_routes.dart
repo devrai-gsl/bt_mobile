@@ -11,7 +11,7 @@ class AppRoutes {
   const AppRoutes._();
 
   static Widget home(AuthController controller) {
-    switch (controller.route) {
+    switch (controller.route) { 
       case AuthRoute.loading:
         return const Scaffold(
           body: Center(child: CircularProgressIndicator()),
